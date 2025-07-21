@@ -1,0 +1,84 @@
+.heading1 {
+  color: var(--color-muted-blue-gray);
+  font-family: var(--typography-font-family-primary);
+  font-size: var(--typography-heading-1-font-size);
+  font-style: var(--typography-heading-1-font-style);
+  font-weight: var(--typography-heading-1-font-weight);
+  line-height: var(--typography-heading-1-line-height);
+}
+
+.heading2 {
+  color: var(--color-muted-blue-gray);
+  font-family: var(--typography-font-family-primary);
+  font-size: var(--typography-heading-2-font-size);
+  font-style: var(--typography-heading-2-font-style);
+  font-weight: var(--typography-heading-2-font-weight);
+  line-height: var(--typography-heading-2-line-height);
+}
+
+.heading3 {
+  color: var(--color-muted-blue-gray);
+  font-family: var(--typography-font-family-primary);
+  font-size: var(--typography-heading-3-font-size);
+  font-style: var(--typography-heading-3-font-style);
+  font-weight: var(--typography-heading-3-font-weight);
+  line-height: var(--typography-heading-3-line-height);
+}
+
+.heading4 {
+  color: var(--color-muted-blue-gray);
+  font-family: var(--typography-font-family-primary);
+  font-size: var(--typography-heading-4-font-size);
+  font-style: var(--typography-heading-4-font-style);
+  font-weight: var(--typography-heading-4-font-weight);
+  line-height: var(--typography-heading-4-line-height);
+}
+
+.heading5 {
+  color: var(--color-muted-blue-gray);
+  font-family: var(--typography-font-family-primary);
+  font-size: var(--typography-heading-5-font-size);
+  font-style: var(--typography-heading-5-font-style);
+  font-weight: var(--typography-heading-5-font-weight);
+  line-height: var(--typography-heading-5-line-height);
+}
+
+.bodyRegular {
+  color: var(--color-muted-blue-gray);
+  font-family: var(--typography-font-family-body);
+  font-size: var(--typography-body-regular-font-size);
+  font-style: var(--typography-body-regular-font-style);
+  font-weight: var(--typography-body-regular-font-weight);
+  line-height: var(--typography-body-regular-line-height);
+}
+
+.bodyMedium {
+  color: var(--color-muted-blue-gray);
+  font-family: var(--typography-font-family-body);
+  font-size: var(--typography-body-medium-font-size);
+  font-style: var(--typography-body-medium-font-style);
+  font-weight: var(--typography-body-medium-font-weight);
+  line-height: var(--typography-body-medium-line-height);
+}
+
+.errorText {
+  color: var(--color-red-70);
+  font-family: var(--typography-font-family-body);
+  font-size: var(--typography-error-text-font-size);
+  font-style: var(--typography-error-text-font-style);
+  font-weight: var(--typography-error-text-font-weight);
+  line-height: var(--typography-error-text-line-height);
+}
+
+@media screen and (width < 768px) {
+  .heading1 {
+    font-size: var(--typography-heading-1-mobile-font-size);
+    line-height: var(--typography-heading-1-mobile-line-height);
+  }
+  .heading2 {
+    font-size: var(--typography-heading-2-mobile-font-size);
+  }
+  .heading3 {
+    font-size: var(--typography-heading-3-mobile-font-size);
+  }
+}

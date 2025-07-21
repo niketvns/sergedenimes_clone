@@ -1,0 +1,47 @@
+.footer {
+  background-color: #f3f3f3;
+
+  .links {
+    .linksColumn {
+      .footerMenuControl {
+        display: none;
+
+        &:checked ~ .footerMenuContent {
+          display: block;
+        }
+      }
+
+      label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+
+        @media screen and (min-width: 768px) {
+          margin-bottom: 1rem;
+        }
+      }
+
+      .footerMenuContent {
+        display: none;
+
+        @media screen and (min-width: 768px) {
+          display: block;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .socials {
+    .socialsIcons {
+      img {
+        width: 30px;
+        height: 30px;
+        transition: opacity 0.3s ease;
+      }
+    }
+  }
+}

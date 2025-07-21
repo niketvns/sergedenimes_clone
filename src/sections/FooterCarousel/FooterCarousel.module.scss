@@ -1,0 +1,96 @@
+@use "sass:math";
+
+$serge-gridhelper-v: 8px;
+$serge-gridhelper-h: 16px;
+$serge-footer-icons-iconsize: 40px;
+
+.footerCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  position: relative;
+  overflow-x: clip;
+}
+
+.fader {
+  display: block !important;
+  top: 0;
+  left: calc($serge-gridhelper-v * -4);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 95%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+
+  &.left {
+    left: calc($serge-gridhelper-v * 4);
+    background: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0) 95%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+
+  @media screen and (max-width: 750px) {
+    left: 0;
+
+    &.left {
+      left: 0;
+    }
+  }
+}
+
+.carousel {
+  width: 100%;
+
+  &:focus,
+  &:focus-within,
+  &:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.carouselViewport {
+  overflow: hidden;
+}
+
+.carouselContainer {
+  display: flex;
+  width: 100%;
+}
+
+.carouselItem {
+  display: flex;
+  flex-direction: row;
+  gap: calc($serge-gridhelper-h / 2);
+  margin-right: calc($serge-gridhelper-h * 5);
+  flex: 0 0 auto;
+
+  @media screen and (max-width: 750px) {
+    margin-right: calc($serge-gridhelper-h * 3);
+  }
+
+  &.isSelected {
+    // Additional styles for selected item if needed
+  }
+}
+
+.icon {
+  img {
+    width: $serge-footer-icons-iconsize;
+    height: $serge-footer-icons-iconsize;
+  }
+}
+
+.content {
+  display: flex;
+  gap: calc($serge-gridhelper-v / 6);
+  flex-direction: column;
+}
