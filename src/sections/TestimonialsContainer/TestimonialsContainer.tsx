@@ -6,6 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Fade from "embla-carousel-fade";
 import { IconContainer, IconsNameList } from "@/components/Icons";
 import { testimonialsData } from "./TestimonialsContainer.mock";
+import { VisuallyHidden } from "@/components/VisuallyHidden";
 
 const TestimonialsContainer: FC = (): ReactElement => {
   const [emblaMainRef, emblaMainApi] = useEmblaCarousel(
@@ -74,6 +75,7 @@ const TestimonialsContainer: FC = (): ReactElement => {
             icon={IconsNameList.ChevronLeftIcon}
             className="w-6 h-6 text-black"
           />
+          <VisuallyHidden>Previous</VisuallyHidden>
         </button>
 
         <button
@@ -85,6 +87,7 @@ const TestimonialsContainer: FC = (): ReactElement => {
             icon={IconsNameList.ChevronRightIcon}
             className="w-6 h-6 text-black"
           />
+          <VisuallyHidden>Next</VisuallyHidden>
         </button>
 
         <div className="overflow-hidden" ref={emblaMainRef}>

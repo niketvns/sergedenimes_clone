@@ -8,6 +8,7 @@ import { footerLinks, menuItems } from "./Header.mock";
 import { IconContainer, IconsNameList } from "@/components/Icons";
 import { Sidebar } from "@/components/Sidebar";
 import classNames from "classnames";
+import { VisuallyHidden } from "@/components/VisuallyHidden";
 
 const Header: FC = (): ReactElement => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -122,6 +123,7 @@ const Header: FC = (): ReactElement => {
                 size="20"
                 className={textColorClass}
               />
+              <VisuallyHidden>Search</VisuallyHidden>
             </Link>
             <Link href="/cart" title="Cart" className="bag-icon">
               <IconContainer
@@ -129,6 +131,7 @@ const Header: FC = (): ReactElement => {
                 size="20"
                 className={textColorClass}
               />
+              <VisuallyHidden>Go to cart</VisuallyHidden>
             </Link>
           </div>
         </div>
