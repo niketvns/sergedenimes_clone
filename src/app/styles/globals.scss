@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 .hide_scroll {
+  overflow: hidden;
   padding-right: var(--scroll-lock-padding-right);
 }
 
