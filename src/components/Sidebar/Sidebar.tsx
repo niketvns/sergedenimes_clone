@@ -4,7 +4,6 @@ import styles from "./Sidebar.module.scss";
 import classNames from "classnames";
 import { SidebarProps } from "./types";
 import { Portal } from "../Portal";
-import { VisuallyHidden } from "../VisuallyHidden";
 import { useScrollLock } from "@/hooks/useScrollLock";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 
