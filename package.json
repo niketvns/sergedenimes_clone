@@ -10,7 +10,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/react-transition-group": "^4.4.12",
     "classnames": "^2.5.1",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-fade": "^8.6.0",
@@ -18,8 +17,7 @@
     "motion": "^12.23.6",
     "next": "15.4.1",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-transition-group": "^4.4.5"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
