@@ -5,5 +5,9 @@
   padding-right: var(--scroll-lock-padding-right);
 }
 
+.background-blocker {
+  background-color: transparent;
+}
+
 @import "./tokens";
 @import "./icons";

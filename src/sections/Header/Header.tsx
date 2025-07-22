@@ -54,7 +54,7 @@ const Header: FC = (): ReactElement => {
   return (
     <header
       className={classNames(
-        "down mouse-top fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         headerBgClass,
         { ["shadow-lg"]: isScrolled }
       )}
@@ -83,6 +83,7 @@ const Header: FC = (): ReactElement => {
                 size="20"
                 className={textColorClass}
               />
+              <VisuallyHidden>Menu</VisuallyHidden>
             </label>
             <input
               type="checkbox"
@@ -117,7 +118,7 @@ const Header: FC = (): ReactElement => {
 
           {/* Actions (Search & Cart) */}
           <div className="actions flex items-center space-x-4">
-            <Link href="/search" title="Search the site" data-action-search="">
+            <Link href="/search" title="Search the site">
               <IconContainer
                 icon={IconsNameList.SearchIcon}
                 size="20"
@@ -146,10 +147,7 @@ const Header: FC = (): ReactElement => {
             <Link href="/collections/bestsellers">Best Sellers</Link>
             <Link href="/collections/gold">Shop Gold</Link>
             <Link href="/collections/silver">Shop Silver</Link>
-            <Link
-              href="/collections/perle"
-              className="serge-header-modifier-bold text-perle"
-            >
+            <Link href="/collections/perle" className="text-gray-600">
               PERLE
             </Link>
             <Link href="/collections/modern-rodeo">Modern Rodeo</Link>
@@ -194,7 +192,7 @@ const Header: FC = (): ReactElement => {
                       <input
                         type="checkbox"
                         id={`submenu-${index}`}
-                        className="submenu-control hidden"
+                        className="hidden"
                         checked={submenuOpen === index}
                         onChange={() => toggleSubmenu(index)}
                       />
@@ -206,7 +204,7 @@ const Header: FC = (): ReactElement => {
                         <span>{submenuOpen === index ? "-" : "+"}</span>
                       </label>
                       {submenuOpen === index && (
-                        <div className="submenu-content pl-4 py-2">
+                        <div className="pl-4 py-2">
                           <ul className="space-y-2">
                             {item.submenu.map((subItem, subIndex) => (
                               <li key={subIndex}>

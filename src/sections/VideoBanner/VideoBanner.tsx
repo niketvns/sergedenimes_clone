@@ -18,7 +18,6 @@ const VideoBanner: React.FC = () => {
             src="/assets/desktop-poster.webp"
             alt="Desktop video fallback"
             fill
-            // className="object-cover"
             sizes="100vw"
           />
         </video>

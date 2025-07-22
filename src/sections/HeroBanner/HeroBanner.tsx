@@ -13,12 +13,7 @@ const HeroBanner: FC<HeroBannerProps> = ({
   customClassName,
 }): ReactElement => {
   return (
-    <section
-      className={classNames(
-        "hero serge-bannergroup ratio-bannergroup relative h-screen",
-        customClassName
-      )}
-    >
+    <section className={classNames("relative h-screen", customClassName)}>
       <div className="serge-bannergroup-banner-image">
         <Image
           src={desktopImage?.src}
@@ -41,7 +36,7 @@ const HeroBanner: FC<HeroBannerProps> = ({
           className="absolute inset-0"
           aria-label={action?.description}
         />
-        <div className="serge-banner-button serge-banner-button-banner_image_GnLACq absolute bottom-0 left-0 right-0 text-center pb-8">
+        <div className="absolute bottom-0 left-0 right-0 text-center pb-8">
           <h2 className="text-xl md:text-2xl font-serif text-current mb-4">
             {heading}
           </h2>

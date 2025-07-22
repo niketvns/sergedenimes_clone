@@ -3,6 +3,7 @@ import styles from "./Footer.module.scss";
 import { ReactElement } from "react";
 import { IconContainer } from "@/components/Icons";
 import { footerColumns, socialLinks } from "./Footer.mock";
+import { VisuallyHidden } from "@/components/VisuallyHidden";
 
 const Footer: React.FC = (): ReactElement => {
   return (
@@ -40,7 +41,7 @@ const Footer: React.FC = (): ReactElement => {
           <div className={`${styles.socials} text-center`}>
             <div className={`${styles.socialsIcons} flex justify-center gap-6`}>
               {socialLinks.map((social) => (
-                <a
+                <Link
                   key={social.platform}
                   href={social.href}
                   target="_blank"
@@ -48,7 +49,8 @@ const Footer: React.FC = (): ReactElement => {
                   title={social.alt}
                 >
                   <IconContainer icon={social.icon} size="20" />
-                </a>
+                  <VisuallyHidden>{social.platform}</VisuallyHidden>
+                </Link>
               ))}
             </div>
           </div>

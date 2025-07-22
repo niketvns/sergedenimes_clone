@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { IconContainer, IconsNameList } from "@/components/Icons";
+import { VisuallyHidden } from "@/components/VisuallyHidden";
 
 const SignupBlock: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -35,6 +36,7 @@ const SignupBlock: React.FC = () => {
             />
             <button className="px-4 cursor-pointer">
               <IconContainer icon={IconsNameList.ArrowRightIcon} />
+              <VisuallyHidden>Submit</VisuallyHidden>
             </button>
           </form>
         </div>
