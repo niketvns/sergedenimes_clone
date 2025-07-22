@@ -1,4 +1,8 @@
 @import "tailwindcss";
 
+.hide_scroll {
+  padding-right: var(--scroll-lock-padding-right);
+}
+
 @import "./tokens";
 @import "./icons";
